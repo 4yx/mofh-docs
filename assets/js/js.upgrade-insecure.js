@@ -1,1 +1,1 @@
-if(location.protocol=='http:'){location.replace('https://'+location.host+location.pathname+location.search);}
+if (location.protocol == 'http:') { location.replace('https://' + location.host + location.pathname + location.search); }

@@ -1,19 +1,304 @@
 <!doctype html>
-<html lang="en" dir="ltr" class="docs-wrapper docs-doc-page docs-version-current plugin-docs plugin-id-default docs-doc-id-ssl-and-security/force-https-traffic">
+<html lang="en" dir="ltr"
+    class="docs-wrapper docs-doc-page docs-version-current plugin-docs plugin-id-default docs-doc-id-ssl-and-security/force-https-traffic">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="generator" content="Docusaurus v2.0.0-beta.21">
-<link rel="preconnect" href="https://www.google-analytics.com">
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-228120568-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview")</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script><title data-rh="true">Forcing Web Traffic To Use HTTPS | PleasantFree Docs</title><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.pleasantfree.com/img/opengraph.png"><meta data-rh="true" name="twitter:image" content="https://docs.pleasantfree.com/img/opengraph.png"><meta data-rh="true" property="og:url" content="https://docs.pleasantfree.com/ssl-and-security/force-https-traffic"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Forcing Web Traffic To Use HTTPS | PleasantFree Docs"><meta data-rh="true" name="description" content="Have you finished installing your SSL certificate on your domain by following this guide? Congratulations upon securing your website!"><meta data-rh="true" property="og:description" content="Have you finished installing your SSL certificate on your domain by following this guide? Congratulations upon securing your website!"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://docs.pleasantfree.com/ssl-and-security/force-https-traffic"><link data-rh="true" rel="alternate" href="https://docs.pleasantfree.com/ssl-and-security/force-https-traffic" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.pleasantfree.com/ssl-and-security/force-https-traffic" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.f281fbe8.css">
-<link rel="preload" href="/assets/js/runtime~main.1ec76c6b.js" as="script">
-<link rel="preload" href="/assets/js/main.735d1d50.js" as="script">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="Docusaurus v2.0.0-beta.21">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <script>window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }, ga.l = +new Date, ga("create", "UA-228120568-1", "auto"), ga("set", "anonymizeIp", !0), ga("send", "pageview")</script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <title data-rh="true">Forcing Web Traffic To Use HTTPS | PleasantFree Docs</title>
+    <meta data-rh="true" name="twitter:card" content="summary_large_image">
+    <meta data-rh="true" property="og:image" content="https://docs.pleasantfree.com/img/opengraph.png">
+    <meta data-rh="true" name="twitter:image" content="https://docs.pleasantfree.com/img/opengraph.png">
+    <meta data-rh="true" property="og:url" content="https://docs.pleasantfree.com/ssl-and-security/force-https-traffic">
+    <meta data-rh="true" name="docusaurus_locale" content="en">
+    <meta data-rh="true" name="docsearch:language" content="en">
+    <meta data-rh="true" name="docusaurus_version" content="current">
+    <meta data-rh="true" name="docusaurus_tag" content="docs-default-current">
+    <meta data-rh="true" name="docsearch:version" content="current">
+    <meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current">
+    <meta data-rh="true" property="og:title" content="Forcing Web Traffic To Use HTTPS | PleasantFree Docs">
+    <meta data-rh="true" name="description"
+        content="Have you finished installing your SSL certificate on your domain by following this guide? Congratulations upon securing your website!">
+    <meta data-rh="true" property="og:description"
+        content="Have you finished installing your SSL certificate on your domain by following this guide? Congratulations upon securing your website!">
+    <link data-rh="true" rel="icon" href="/img/favicon.ico">
+    <link data-rh="true" rel="canonical" href="https://docs.pleasantfree.com/ssl-and-security/force-https-traffic">
+    <link data-rh="true" rel="alternate" href="https://docs.pleasantfree.com/ssl-and-security/force-https-traffic"
+        hreflang="en">
+    <link data-rh="true" rel="alternate" href="https://docs.pleasantfree.com/ssl-and-security/force-https-traffic"
+        hreflang="x-default">
+    <link rel="stylesheet" href="/assets/css/styles.f281fbe8.css">
+    <link rel="preload" href="/assets/js/runtime~main.1ec76c6b.js" as="script">
+    <link rel="preload" href="/assets/js/main.735d1d50.js" as="script">
 </head>
+
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus">
-<div role="region"><a href="#" class="skipToContent_ZgBM">Skip to main content</a></div><div class="announcementBar_IbjG" style="color:#000" role="banner"><div class="announcementBarPlaceholder_NC_W"></div><div class="announcementBarContent_KsVm">We stand firmly in support of Ukraine and of peace everywhere, please consider <a href="https://bank.gov.ua/en/about/humanitarian-aid-to-ukraine" target="_blank">donating</a>.</div><button type="button" class="clean-btn close announcementBarClose_FG1z" aria-label="Close"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle clean-btn" type="button" tabindex="0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="PleasantFree" class="themedImage_W2Cr themedImage--light_TfLj"><img src="/img/logo.svg" alt="PleasantFree" class="themedImage_W2Cr themedImage--dark_oUvU"></div></a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/pleasantfree/docs" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_I5OW"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">PleasantFree</a><ul class="dropdown__menu"><li><a href="https://pleasantfree.com" target="_blank" rel="noopener noreferrer" class="dropdown__link">Homepage<svg width="12" height="12" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_I5OW"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li><a href="https://forum.pleasantfree.com" target="_blank" rel="noopener noreferrer" class="dropdown__link">Community<svg width="12" height="12" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_I5OW"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="toggle_S7eR colorModeToggle_vKtC"><button class="clean-btn toggleButton_rCf9 toggleButtonDisabled_Pu9x" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_v35p"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_nQuB"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="searchBox_dLyj"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div class="main-wrapper docsWrapper_mKqt"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_RiI4" type="button"></button><div class="docPage_ualW"><aside class="theme-doc-sidebar-container docSidebarContainer_UQUJ"><div class="sidebar_RiAD"><nav class="menu thin-scrollbar menu_izAj menuWithAnnouncementBar_l2a_"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/">Knowledge Base</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/account-management/delete-profile">Account Management</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/domains-and-dns/dns-propagation">Domains And DNS</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/fair-usage-limits/botnet-attack">Fair Usage Limits</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/files-and-ftp/disk-quota-exceeded">Files And FTP</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/getting-started/migrate-your-website">Getting Started</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/mysql-databases/common-mysql-errors">MySQL Databases</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/ssl-and-security/create-cname-records">SSL And Security</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ssl-and-security/create-cname-records">Create CNAME Records For SSL</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/ssl-and-security/force-https-traffic">Forcing Web Traffic To Use HTTPS</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/ssl-and-security/install-ssl-certificate">Installing Free SSL Certificate</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/websites-and-php/google-search-console">Websites And PHP</a></div></li></ul></nav></div></aside><main class="docMainContainer_uL0j"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_DM6M"><div class="docItemContainer_vinB"><article><div class="tocCollapsible_bZGK theme-doc-toc-mobile tocMobile_TmEX"><button type="button" class="clean-btn tocCollapsibleButton_l22C">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Forcing Web Traffic To Use HTTPS</h1><p>Have you finished installing your SSL certificate on your domain by following this guide? Congratulations upon securing your website!</p><p><a href="https://docs.pleasantfree.com/ssl-and-security/install-ssl-certificate" target="_blank" rel="noopener noreferrer">https://docs.pleasantfree.com/ssl-and-security/install-ssl-certificate</a></p><p>Now you may want to force/forward all of your visitors to use the HTTPS version of your site instead of HTTP. This guide covers all possible methods to do that safely on free hosting.</p><h2 class="anchor anchorWithStickyNavbar_mojV" id="forcing-https-using-htaccess">Forcing HTTPS Using <code>.htaccess</code><a class="hash-link" href="#forcing-https-using-htaccess" title="Direct link to heading">​</a></h2><p>Get into your File Manager via the client area or control panel. Hover into the <code>/htdocs</code> folder and create a file named <code>.htaccess</code> if it’s not there already, if it is, just edit the file and add the following code into it:</p><div class="language-text codeBlockContainer_MPoW theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_B9tL"><pre tabindex="0" class="prism-code language-text codeBlock__0OG thin-scrollbar"><code class="codeBlockLines_gEuF"><span class="token-line" style="color:#393A34"><span class="token plain">RewriteEngine On </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">RewriteCond %{HTTPS} off </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</span><br></span></code></pre><div class="buttonGroup_hRr1"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_W9eQ" aria-hidden="true"><svg class="copyButtonIcon_XEyF" viewBox="0 0 24 24"><path d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg class="copyButtonSuccessIcon_i9w9" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div><p>Ah, don’t forget to save the file!</p><h2 class="anchor anchorWithStickyNavbar_mojV" id="edit-your-cloudflare-settings">Edit Your Cloudflare Settings<a class="hash-link" href="#edit-your-cloudflare-settings" title="Direct link to heading">​</a></h2><p>If you’re using Cloudflare on your website, you can let Cloudflare enforce HTTPS for you. Simply log in to Cloudflare’s website, go to the SSL/TLS settings for your domain, and enable “Always use HTTPS”.</p><p><img loading="lazy" alt="Cloudflare Always Use HTTPS" src="data:image/png;base64,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" width="904" height="155" class="img_E7b_"></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/ssl-and-security/create-cname-records"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Create CNAME Records For SSL</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/ssl-and-security/install-ssl-certificate"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Installing Free SSL Certificate</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_cNA8 thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#forcing-https-using-htaccess" class="table-of-contents__link toc-highlight">Forcing HTTPS Using <code>.htaccess</code></a></li><li><a href="#edit-your-cloudflare-settings" class="table-of-contents__link toc-highlight">Edit Your Cloudflare Settings</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2022 PleasantFree Docs. Made With &#10084;&#65039; In USA & India.</div></div></div></footer></div>
-<script src="/assets/js/runtime~main.1ec76c6b.js"></script>
-<script src="/assets/js/main.735d1d50.js"></script>
+    <script>!function () { function t(t) { document.documentElement.setAttribute("data-theme", t) } var e = function () { var t = null; try { t = localStorage.getItem("theme") } catch (t) { } return t }(); t(null !== e ? e : "light") }(), document.documentElement.setAttribute("data-announcement-bar-initially-dismissed", function () { try { return "true" === localStorage.getItem("docusaurus.announcement.dismiss") } catch (t) { } return !1 }())</script>
+    <div id="__docusaurus">
+        <div role="region"><a href="#" class="skipToContent_ZgBM">Skip to main content</a></div>
+        <div class="announcementBar_IbjG" style="color:#000" role="banner">
+            <div class="announcementBarPlaceholder_NC_W"></div>
+            <div class="announcementBarContent_KsVm">We stand firmly in support of Ukraine and of peace everywhere,
+                please consider <a href="https://bank.gov.ua/en/about/humanitarian-aid-to-ukraine"
+                    target="_blank">donating</a>.</div><button type="button"
+                class="clean-btn close announcementBarClose_FG1z" aria-label="Close"><svg viewBox="0 0 15 15" width="14"
+                    height="14">
+                    <g stroke="currentColor" stroke-width="3.1">
+                        <path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path>
+                    </g>
+                </svg></button>
+        </div>
+        <nav class="navbar navbar--fixed-top">
+            <div class="navbar__inner">
+                <div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle clean-btn"
+                        type="button" tabindex="0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                                d="M4 7h22M4 15h22M4 23h22"></path>
+                        </svg></button><a class="navbar__brand" href="/">
+                        <div class="navbar__logo"><img src="/img/logo.svg" alt="PleasantFree"
+                                class="themedImage_W2Cr themedImage--light_TfLj"><img src="/img/logo.svg"
+                                alt="PleasantFree" class="themedImage_W2Cr themedImage--dark_oUvU"></div>
+                    </a></div>
+                <div class="navbar__items navbar__items--right"><a href="https://github.com/pleasantfree/docs"
+                        target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg
+                            width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24"
+                            class="iconExternalLink_I5OW">
+                            <path fill="currentColor"
+                                d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z">
+                            </path>
+                        </svg></a>
+                    <div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#"
+                            aria-haspopup="true" aria-expanded="false" role="button"
+                            class="navbar__link">PleasantFree</a>
+                        <ul class="dropdown__menu">
+                            <li><a href="https://pleasantfree.com" target="_blank" rel="noopener noreferrer"
+                                    class="dropdown__link">Homepage<svg width="12" height="12" aria-hidden="true"
+                                        viewBox="0 0 24 24" class="iconExternalLink_I5OW">
+                                        <path fill="currentColor"
+                                            d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z">
+                                        </path>
+                                    </svg></a></li>
+                            <li><a href="https://forum.pleasantfree.com" target="_blank" rel="noopener noreferrer"
+                                    class="dropdown__link">Community<svg width="12" height="12" aria-hidden="true"
+                                        viewBox="0 0 24 24" class="iconExternalLink_I5OW">
+                                        <path fill="currentColor"
+                                            d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z">
+                                        </path>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                    <div class="toggle_S7eR colorModeToggle_vKtC"><button
+                            class="clean-btn toggleButton_rCf9 toggleButtonDisabled_Pu9x" type="button" disabled=""
+                            title="Switch between dark and light mode (currently light mode)"
+                            aria-label="Switch between dark and light mode (currently light mode)"><svg
+                                viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_v35p">
+                                <path fill="currentColor"
+                                    d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z">
+                                </path>
+                            </svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_nQuB">
+                                <path fill="currentColor"
+                                    d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z">
+                                </path>
+                            </svg></button></div>
+                    <div class="searchBox_dLyj"></div>
+                </div>
+            </div>
+            <div role="presentation" class="navbar-sidebar__backdrop"></div>
+        </nav>
+        <div class="main-wrapper docsWrapper_mKqt"><button aria-label="Scroll back to top"
+                class="clean-btn theme-back-to-top-button backToTopButton_RiI4" type="button"></button>
+            <div class="docPage_ualW">
+                <aside class="theme-doc-sidebar-container docSidebarContainer_UQUJ">
+                    <div class="sidebar_RiAD">
+                        <nav class="menu thin-scrollbar menu_izAj menuWithAnnouncementBar_l2a_">
+                            <ul class="theme-doc-sidebar-menu menu__list">
+                                <li
+                                    class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item">
+                                    <a class="menu__link" href="/">Knowledge Base</a></li>
+                                <li
+                                    class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed">
+                                    <div class="menu__list-item-collapsible"><a
+                                            class="menu__link menu__link--sublist menu__link--sublist-caret"
+                                            aria-expanded="false" href="/account-management/delete-profile">Account
+                                            Management</a></div>
+                                </li>
+                                <li
+                                    class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed">
+                                    <div class="menu__list-item-collapsible"><a
+                                            class="menu__link menu__link--sublist menu__link--sublist-caret"
+                                            aria-expanded="false" href="/domains-and-dns/dns-propagation">Domains And
+                                            DNS</a></div>
+                                </li>
+                                <li
+                                    class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed">
+                                    <div class="menu__list-item-collapsible"><a
+                                            class="menu__link menu__link--sublist menu__link--sublist-caret"
+                                            aria-expanded="false" href="/fair-usage-limits/botnet-attack">Fair Usage
+                                            Limits</a></div>
+                                </li>
+                                <li
+                                    class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed">
+                                    <div class="menu__list-item-collapsible"><a
+                                            class="menu__link menu__link--sublist menu__link--sublist-caret"
+                                            aria-expanded="false" href="/files-and-ftp/disk-quota-exceeded">Files And
+                                            FTP</a></div>
+                                </li>
+                                <li
+                                    class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed">
+                                    <div class="menu__list-item-collapsible"><a
+                                            class="menu__link menu__link--sublist menu__link--sublist-caret"
+                                            aria-expanded="false" href="/getting-started/migrate-your-website">Getting
+                                            Started</a></div>
+                                </li>
+                                <li
+                                    class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed">
+                                    <div class="menu__list-item-collapsible"><a
+                                            class="menu__link menu__link--sublist menu__link--sublist-caret"
+                                            aria-expanded="false" href="/mysql-databases/common-mysql-errors">MySQL
+                                            Databases</a></div>
+                                </li>
+                                <li
+                                    class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item">
+                                    <div class="menu__list-item-collapsible"><a
+                                            class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active"
+                                            aria-expanded="true" href="/ssl-and-security/create-cname-records">SSL And
+                                            Security</a></div>
+                                    <ul style="display:block;overflow:visible;height:auto" class="menu__list">
+                                        <li
+                                            class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+                                            <a class="menu__link" tabindex="0"
+                                                href="/ssl-and-security/create-cname-records">Create CNAME Records For
+                                                SSL</a></li>
+                                        <li
+                                            class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+                                            <a class="menu__link menu__link--active" aria-current="page" tabindex="0"
+                                                href="/ssl-and-security/force-https-traffic">Forcing Web Traffic To Use
+                                                HTTPS</a></li>
+                                        <li
+                                            class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item">
+                                            <a class="menu__link" tabindex="0"
+                                                href="/ssl-and-security/install-ssl-certificate">Installing Free SSL
+                                                Certificate</a></li>
+                                    </ul>
+                                </li>
+                                <li
+                                    class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed">
+                                    <div class="menu__list-item-collapsible"><a
+                                            class="menu__link menu__link--sublist menu__link--sublist-caret"
+                                            aria-expanded="false"
+                                            href="/websites-and-php/google-search-console">Websites And PHP</a></div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+                <main class="docMainContainer_uL0j">
+                    <div class="container padding-top--md padding-bottom--lg">
+                        <div class="row">
+                            <div class="col docItemCol_DM6M">
+                                <div class="docItemContainer_vinB">
+                                    <article>
+                                        <div class="tocCollapsible_bZGK theme-doc-toc-mobile tocMobile_TmEX"><button
+                                                type="button" class="clean-btn tocCollapsibleButton_l22C">On this
+                                                page</button></div>
+                                        <div class="theme-doc-markdown markdown">
+                                            <h1>Forcing Web Traffic To Use HTTPS</h1>
+                                            <p>Have you finished installing your SSL certificate on your domain by
+                                                following this guide? Congratulations upon securing your website!</p>
+                                            <p><a href="https://docs.pleasantfree.com/ssl-and-security/install-ssl-certificate"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer">https://docs.pleasantfree.com/ssl-and-security/install-ssl-certificate</a>
+                                            </p>
+                                            <p>Now you may want to force/forward all of your visitors to use the HTTPS
+                                                version of your site instead of HTTP. This guide covers all possible
+                                                methods to do that safely on free hosting.</p>
+                                            <h2 class="anchor anchorWithStickyNavbar_mojV"
+                                                id="forcing-https-using-htaccess">Forcing HTTPS Using
+                                                <code>.htaccess</code><a class="hash-link"
+                                                    href="#forcing-https-using-htaccess"
+                                                    title="Direct link to heading">​</a></h2>
+                                            <p>Get into your File Manager via the client area or control panel. Hover
+                                                into the <code>/htdocs</code> folder and create a file named
+                                                <code>.htaccess</code> if it’s not there already, if it is, just edit
+                                                the file and add the following code into it:</p>
+                                            <div class="language-text codeBlockContainer_MPoW theme-code-block"
+                                                style="--prism-color:#393A34;--prism-background-color:#f6f8fa">
+                                                <div class="codeBlockContent_B9tL">
+                                                    <pre tabindex="0"
+                                                        class="prism-code language-text codeBlock__0OG thin-scrollbar"><code class="codeBlockLines_gEuF"><span class="token-line" style="color:#393A34"><span class="token plain">RewriteEngine On </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">RewriteCond %{HTTPS} off </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</span><br></span></code></pre>
+                                                    <div class="buttonGroup_hRr1"><button type="button"
+                                                            aria-label="Copy code to clipboard" title="Copy"
+                                                            class="clean-btn"><span class="copyButtonIcons_W9eQ"
+                                                                aria-hidden="true"><svg class="copyButtonIcon_XEyF"
+                                                                    viewBox="0 0 24 24">
+                                                                    <path
+                                                                        d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z">
+                                                                    </path>
+                                                                </svg><svg class="copyButtonSuccessIcon_i9w9"
+                                                                    viewBox="0 0 24 24">
+                                                                    <path
+                                                                        d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z">
+                                                                    </path>
+                                                                </svg></span></button></div>
+                                                </div>
+                                            </div>
+                                            <p>Ah, don’t forget to save the file!</p>
+                                            <h2 class="anchor anchorWithStickyNavbar_mojV"
+                                                id="edit-your-cloudflare-settings">Edit Your Cloudflare Settings<a
+                                                    class="hash-link" href="#edit-your-cloudflare-settings"
+                                                    title="Direct link to heading">​</a></h2>
+                                            <p>If you’re using Cloudflare on your website, you can let Cloudflare
+                                                enforce HTTPS for you. Simply log in to Cloudflare’s website, go to the
+                                                SSL/TLS settings for your domain, and enable “Always use HTTPS”.</p>
+                                            <p><img loading="lazy" alt="Cloudflare Always Use HTTPS"
+                                                    src="data:image/png;base64,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"
+                                                    width="904" height="155" class="img_E7b_"></p>
+                                        </div>
+                                    </article>
+                                    <nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages navigation"><a
+                                            class="pagination-nav__link pagination-nav__link--prev"
+                                            href="/ssl-and-security/create-cname-records">
+                                            <div class="pagination-nav__sublabel">Previous</div>
+                                            <div class="pagination-nav__label">Create CNAME Records For SSL</div>
+                                        </a><a class="pagination-nav__link pagination-nav__link--next"
+                                            href="/ssl-and-security/install-ssl-certificate">
+                                            <div class="pagination-nav__sublabel">Next</div>
+                                            <div class="pagination-nav__label">Installing Free SSL Certificate</div>
+                                        </a></nav>
+                                </div>
+                            </div>
+                            <div class="col col--3">
+                                <div class="tableOfContents_cNA8 thin-scrollbar theme-doc-toc-desktop">
+                                    <ul class="table-of-contents table-of-contents__left-border">
+                                        <li><a href="#forcing-https-using-htaccess"
+                                                class="table-of-contents__link toc-highlight">Forcing HTTPS Using
+                                                <code>.htaccess</code></a></li>
+                                        <li><a href="#edit-your-cloudflare-settings"
+                                                class="table-of-contents__link toc-highlight">Edit Your Cloudflare
+                                                Settings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <footer class="footer footer--dark">
+            <div class="container container-fluid">
+                <div class="footer__bottom text--center">
+                    <div class="footer__copyright">Copyright © 2022 PleasantFree Docs. Made With &#10084;&#65039; In USA
+                        & India.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/assets/js/runtime~main.1ec76c6b.js"></script>
+    <script src="/assets/js/main.735d1d50.js"></script>
 </body>
+
 </html>
